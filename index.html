@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+		<button id="rock">🏔</button>
+	  <button id="paper">📜</button>
+	  <button id="sis">✂️ </button>
+    <h1 id="userdisplay"></h1>
+<script>
+var rock = document.getElementById('rock')
+var paper = document.getElementById('paper')
+var sis = document.getElementById('sis')
+
+//var hand = [rock,paper,sis]
+
+const display = document.getElementById("userdisplay")
+
+rock.addEventListener("click", shoot)
+paper.addEventListener("click", shoot)
+sis.addEventListener("click", shoot)
+
+//user selection
+
+function shoot(){
+	display.innerText("") 
+};
+
+
+//computer
+
+//function shootcomputer() {
+// return [Math.floor(Math.random()*hand.length)]
+
+
+//};
+
+</script>
+  </body>
+</html>
+
+
