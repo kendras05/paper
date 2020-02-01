@@ -3,12 +3,12 @@
   <body>
 		<button id="rock">🏔</button>
 	  <button id="paper">📜</button>
-	  <button id="sis">✂️ </button>
+	  <button id="scissors">✂️ </button>
     <h1 id="userdisplay"></h1>
 <script>
 var rock = document.getElementById('rock')
 var paper = document.getElementById('paper')
-var sis = document.getElementById('sis')
+var sis = document.getElementById('scissors')
 
 //var hand = [rock,paper,sis]
 
@@ -20,14 +20,14 @@ sis.addEventListener("click", shoot)
 
 //user selection
 
-function shoot(){
-	display.innerText("") 
+function shoot(e){
+	display.innerText = e.target.id
 };
 
 
 //computer
 
-//function shootcomputer() {
+//function shootcomputer({ 
 // return [Math.floor(Math.random()*hand.length)]
 
 
